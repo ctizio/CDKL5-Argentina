@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDKL5 Argentina</title>
+    <link rel="stylesheet" href="formContac.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/773f6edefa.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header class="main-header">
+        <div class="logo"><img src="DATA/logo.png" alt="logo" width="30%"></div>
+        <nav id="nav" class="barra">
+
+
+            <div class="botones">
+                <a href="index.html" class="C1">Home</a>
+                <a href="acerca.html" class="C1">Acerca de CDKL5</a>
+                <a href="nosotros.html" class="C1">Nosotros</a>
+                <a href="noticias.html" class="C1">Noticias</a>
+                <a href="formContac.html" class="C1">Contacto</a>
+                <a href="#" class="C1">Quiero Donar</a>
+            </div>
+
+        </nav>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+
+        <div class="banner"> <img src="DATA/contacto.png" alt="banner" width="100%">
+            <!-- <h1>
+                <span style="color:#8DD5F2">C</span>
+                <span style="color:#BABF24">D</span>
+                <span style="color:#8DD5F2">K</span>
+                <span style="color:#BABF24">L</span>
+                <span style="color:#A6269D">5</span>
+                ARGENTINA
+            </h1> -->
+
+        </div>
+
+        <div class="contact_form">
+            <form class="ppal">
+                <!-- <fieldset> -->
+                <legend>ESCRIBINOS: </legend>
+                <div class="text-escribinos">
+                    <p>
+                        Si querés formar parte de la comunidad o saber más, escribinos a info@cmdkl5.com.ar o completa
+                        el siguiente formulario:
+                    </p>
+                </div>
+                <form action="#" method="POST" enctype="text/plain">
+                    <div class="campos" id="nombre">
+                        <label for="nombre" class="in_nombre">
+                            Nombre: <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="nombre" required="obligatorio" placeholder="Nombres">
+                    </div>
+                    <div class="campos" id="apellido">
+                        <label for="apellido" class="in_apellido" required="obligatorio">
+                            Apellido: <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="apellido" required="obligatorio" placeholder="Apellidos">
+                    </div>
+                    <div class="campos" id="mail">
+                        <label for="email" class="in_email" required="obligatorio">
+                            E-Mail: <span class="obligatorio">*</span>
+                        </label>
+                        <input type="email" name="email" required="obligatorio" placeholder="tuCorreo@gmail.com">
+                    </div>
+                    <div class="campos" id="mensaje">
+                        <label for="mensaje" class="in_mensaje" required="obligatorio">
+                            Tu mensaje: <span class="obligatorio">*</span>
+                        </label>
+                        <textarea name="mensaje" class="text_message" required="obligatorio"
+                            placeholder="Contanos tu historia:"></textarea>
+                    </div>
+                    <input type="submit" value="ENVIAR" class="boton1">
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>Los campos son obligatorios.
+                    </p>
+                </form>
+
+                <!-- </fieldset> -->
+            </form>
+            <div class="sisos">
+                <p>   Si sos investigador, escribinos a</p>
+                <a href="mailto:investigadores@cdkl5.com.ar">investigadores@cdkl5.com.ar</a> <br>
+                <br>
+               
+                <p>   Si sos medico, escribinos a</p>
+                <a href="mailto:medicos@cdkl5.com.ar">medicos@cdkl5.com.ar</a>
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        
+        <div class="pie">
+            <div class="container">
+            <div class="logopie"><img src="DATA/logo_pie.png" alt="logo" width="20%" >
+            <section class="ft-social">
+                <ul class="ft-social-list">
+                  <li><a href="https://www.facebook.com/CDKL5-Argentina-100111112781967"><i class="fab fa-facebook" style="color: white"></i></a></li>
+                  <li><a href="https://twitter.com/CDKL5Alliance"><i class="fab fa-twitter"style="color: white"></i></a></li>
+                  <li><a href="https://www.instagram.com/cdkl5.argentina/"><i class="fab fa-instagram"style="color: white"></i></a></li>
+                   <!-- <li><a href="#"><i class="fab fa-github"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+                   <link rel="icon" href="favicon.png"> 
+                </ul>
+              </section> 
+            </div>
+            
+            
+              <section class="ft-legal">
+                <ul class="ft-legal-list">
+                  
+                  <li><a href="#">Politica de Privacidad</a></li>
+                  <li><a href="#">Condiciones de Uso</a></li>
+                  <li>&copy; 2022 Copyright CDKL5 Argentina</li>
+                </ul>
+              </section>
+            </div>     
+    </div>
+  </footer>
+
+
+</body>
+
+<script src="script.js"></script>
+
+
+</html>
