@@ -91,7 +91,7 @@ header {
 
 .barra.show {
     margin-left: 0;
-}
+} 
 
 
 .botones {
@@ -184,7 +184,7 @@ legend {
 
 .ppal {
     justify-content: stretch;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
     padding: 5% 0%;
 }
@@ -194,12 +194,12 @@ legend {
     display: grid;
     align-items: center;
     /* grid-template-columns: 65% 35%; */
-    width: 80%;
+    width: 100%;
 }
 
 span {
     color: #ababab;
-    ;
+    
 }
 
 input {
@@ -257,7 +257,7 @@ label {
     flex-direction: column;
     line-height: 100%;
     margin-left: 5%;
-
+    align-items: center;
 }
 
 
@@ -318,6 +318,7 @@ label {
   .ft-legal-list {
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
   
@@ -335,11 +336,11 @@ label {
     color: white;
   }
   
-  /* one before the last child */
+  /* one before the last child 
   .ft-legal-list li:nth-last-child(2) {
     flex: 1;
-    /* same as flex-grow: 1; */
-  }
+ /* same as flex-grow: 1;  
+  }*/
   
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PARA TABLET!!! ¿¿¿¿¿¿¿¿¿¿¿¿¿*/
@@ -486,16 +487,6 @@ label {
     color: white;
 }
 
-/* .descripcion{
-    height: 50vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;  
-    justify-content: space-evenly;
-    margin: 0% 5%;
-    font-size: 20px;
-  } */
-/* 
   /* PARA ESCRITORIO!!  */
 @media screen and (min-width: 1024px) {
 

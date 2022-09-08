@@ -66,6 +66,46 @@ header {
   color: #ababab;
   text-decoration: none;
 }
+.button-menu {
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  background: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-menu span {
+  width: 37px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #444444;
+  border-radius: 3px;
+  transform-origin: 4px 0px;
+  transition: all 0.2s linear;
+}
+
+
+
+.button-menu.close span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, 0px);
+  /* background: #ffffff; */
+  background: #ababab;
+}
+
+.button-menu.close span:nth-child(2) {
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.button-menu.close span:nth-child(3) {
+  display: none;
+}
 
 /* ---------- FIN HEADER--------------- */
 
@@ -210,6 +250,7 @@ header {
 .ft-legal-list {
   width: 100%;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -228,10 +269,10 @@ header {
 }
 
 /* one before the last child */
-.ft-legal-list li:nth-last-child(2) {
-  flex: 1;
-  /* same as flex-grow: 1; */
-}
+/* .ft-legal-list li:nth-last-child(2) {
+  /* flex: 1; */
+  /* same as flex-grow: 1; 
+} */
 
 
 /* ----------------- FIN FOOTER ----------------- */
@@ -319,46 +360,7 @@ header {
   width: 100%;
 }
 
-.button-menu {
-  z-index: 200;
-  width: 40px;
-  height: 40px;
-  border: none;
-  display: flex;
-  background: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
 
-.button-menu span {
-  width: 37px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #444444;
-  border-radius: 3px;
-  transform-origin: 4px 0px;
-  transition: all 0.2s linear;
-}
-
-
-
-.button-menu.close span {
-  opacity: 1;
-  transform: rotate(45deg) translate(0px, 0px);
-  /* background: #ffffff; */
-  background: #ababab;
-}
-
-.button-menu.close span:nth-child(2) {
-  transform: rotate(-45deg) translate(-8px, 5px);
-}
-
-.button-menu.close span:nth-child(3) {
-  display: none;
-}
 
 .acerca {
   /* height: 50vh; */
@@ -790,14 +792,11 @@ header {
 
   .ft-legal {
     justify-content: space-evenly;
-
   }
 
   .container {
     flex: 1;
     /* same as flex-grow: 1; */
-
-
   }
 
   .boton-suscribir {
