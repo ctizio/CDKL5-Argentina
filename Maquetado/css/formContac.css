@@ -42,45 +42,14 @@ header {
     text-decoration: none;
 }
 
-/* .descripcion{
-    height: 50vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;  
-    justify-content: space-evenly;
-    margin: 1% 5%;
- }
-  .descripcion h2{
-    color: #8DD5F2;
-  }
-  
-  .newsletter{
-    text-align: center;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;  
-    justify-content: space-evenly;
-    margin: 0% 5%;
-  
-  } */
-.pie {
-    height: 25%;
-    background-color: #023e74;
 
-}
-
-.logopie {
-    width: 500px;
-}
 
 .banner {
     display: flexbox;
-    /* display: inline-block; */
     position: relative;
-    /* height: 20%; */
 }
 
-.banner h1 {
+/* .banner h1 {
     position: absolute;
     top: 20%;
     left: 0%;
@@ -90,7 +59,7 @@ header {
     font-size: 120%;
     justify-content: flex-start;
     text-align: center;
-}
+} */
 
 
 .main-header {
@@ -146,7 +115,8 @@ header {
 .link-item::after {
     position: absolute;
     content: "";
-    background-color: #ababab;;
+    background-color: #ababab;
+    ;
     bottom: -5px;
     left: 0;
     width: 0%;
@@ -228,7 +198,8 @@ legend {
 }
 
 span {
-    color: #ababab;;
+    color: #ababab;
+    ;
 }
 
 input {
@@ -237,7 +208,8 @@ input {
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
-    border-color:#ababab;;
+    border-color: #ababab;
+    ;
 
 }
 
@@ -248,7 +220,8 @@ textarea {
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
-    border-color:#ababab;;
+    border-color: #ababab;
+    ;
 
 }
 
@@ -259,12 +232,12 @@ label {
 }
 
 .boton1 {
-    width:50%;
+    width: 50%;
     background-color: #8DD5F2;
     /* font-family: 'Silkscreen', cursive; */
     font-size: 20px;
     margin-left: 25%;
-    color:white;
+    color: white;
 }
 
 
@@ -277,47 +250,97 @@ label {
     outline: 0;
 }
 
-.ft-social {
-    padding: 0 1.875rem 1.25rem;
-    
-   
-  
-    }
-    .ft-social-list {
+
+
+.sisos {
     display: flex;
-    justify-content: center;
-     
-    padding-top: 1.25rem;
-    
-    }
-  .ft-social-list li {
-    /* margin: 1rem;      */
-    margin: 0;
-    font-size: 1.50rem;
-     width: 50px;
-    text-align: center;
-    box-shadow: 0 3px 5px 0px rgba(0,0,0,2);
-    align-items: center;
-    justify-content: center;
-    list-style-type:none;
-    
-    
-    }
-    .ft-social-list li a:hover{
-    transform: translateY(-3px) scale(1.05px);
-    /* box-shadow: 0 5px 5px 0px rgba(0,0,0,20); */
-    } 
-  
-  .sisos {
-    display: flex;
-    flex-direction:column;
+    flex-direction: column;
     line-height: 100%;
     margin-left: 5%;
-  
-  }
+
+}
 
 
 /* ---------FIN FORMULARIO---------- */
+
+
+.pie {
+    height: 25%;
+    background-color: #023e74;
+    display: flex;
+}
+
+.logopie {
+    width: 200%;
+    padding-top: 1.8%;
+    align-content: center;
+    display: flex;
+    margin-left: 4%;
+}
+
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 1.25rem;
+
+}
+
+.ft-social-list li {
+    /* margin: 1rem;      */
+    margin: 0;
+    font-size: 1.50rem;
+    width: 50px;
+    text-align: center;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.ft-social-list li a:hover {
+    transform: translateY(-3px) scale(1.05px);
+    /* box-shadow: 0 5px 5px 0px rgba(0,0,0,20); */
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #023e74;
+    border-top: 2px solid white;
+    margin-top: 2%;
+  
+  }
+  
+  .ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+    color: white;
+    list-style: none;
+  }
+  
+  .ft-legal-list li a {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+  
+    color: white;
+  }
+  
+  /* one before the last child */
+  .ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+    /* same as flex-grow: 1; */
+  }
+  
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PARA TABLET!!! ¿¿¿¿¿¿¿¿¿¿¿¿¿*/
 
@@ -414,18 +437,32 @@ label {
     .boton1 {
         grid-area: boton1;
         align-self: center;
-        color:white;
+        color: white;
     }
 
     .aviso {
         grid-area: aviso;
         justify-self: center;
-        
+
     }
 
     textarea,
     input {
         width: 100%;
+    }
+
+    .logopie {
+        width: 100%;
+        padding-top: 1.8%;
+    
+        margin-bottom: 2%;
+        display: flex;
+    
+        justify-content: space-around;
+    
+      }
+    .ft-legal {
+        justify-content: space-around;
     }
 
 }
@@ -469,45 +506,62 @@ label {
         color: white;
         font-size: 300%;
     }
+
     .sociales img {
         background-color: #bbb;
         width: 50px;
-        display:block;
+        display: block;
         margin-bottom: 10%;
-      }
-      .ft-social {
-      padding: 0 1.875rem 1.25rem;
-      }
-      .ft-social-list {
-      display: flex;
-      
-      
-      }
-      .ft-social-list li {
-      margin: 1rem; 
-      font-size: 1.50rem;
-      width: 50px;
-      text-align: center;
-      box-shadow: 0 3px 5px 0px rgba(0,0,0,2);
-      align-items: center;
-      justify-content: center;
-      list-style-type:none;
-      
-      }
-      .ft-social-list li a:hover{
-      transform: translateY(-3px) scale(1.05px);
-      /* box-shadow: 0 5px 5px 0px rgba(0,0,0,20); */
-      } 
-      .logopie{
+    }
+
+    .ft-social {
+        padding: 0 1.875rem 1.25rem;
+    }
+
+    .ft-social-list {
+        display: flex;
+
+
+    }
+
+    .ft-social-list li {
+        margin: 1rem;
+        font-size: 1.50rem;
+        width: 50px;
+        text-align: center;
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+
+    }
+
+    .ft-social-list li a:hover {
+        transform: translateY(-3px) scale(1.05px);
+        /* box-shadow: 0 5px 5px 0px rgba(0,0,0,20); */
+    }
+
+    .logopie {
         width: 100%;
         padding-top: 1.8%;
-      
-         margin-bottom: 2%; 
-          display: flex; 
-         
-          justify-content:space-around;
-         
-         }
+
+        margin-bottom: 2%;
+        display: flex;
+
+        justify-content: space-around;
+
+    }
+    .ft-legal {
+        justify-content: space-evenly;
+    
+    }
+
+    .container {
+        flex: 1;
+        /* same as flex-grow: 1; */
+    
+    
+      }
 
 
 }
