@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url(header.css);
+@import url(footer.css);
+
+
+/* ------INICIO  MAIN DE NOSOTROS ----------- */
+.fotos {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.fotos h1 {
+  position: absolute;
+  top: 50%;
+  color: white;
+  flex-wrap: nowrap;
+  font-size: 120%;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.alliance {
+  text-align: center;
+}
+
+
+.descripcion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1% 5%;
+  line-height: 200%;
+  height: 100%;
+
+}
+
+.descripcion-nosotros h2 {
+  color: #8DD5F2;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.descripcion-nosotros h3 {
+  color: #8DD5F2;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .fotos {
+    margin-left: 0;
+    flex-basis: 70%;
+    height: 100%;
+  }
+
+  .descripcion-nosotros {
+    align-items: center;
+  }
+
+  .fotos h1 {
+    color: white;
+    flex-wrap: nowrap;
+    font-size: xx-large;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+}
+
+/* PARA ESCRITORIO!! lllllllllllllllllllllllllllllllllllllllllllllllllllllllllll */
+@media screen and (min-width: 1024px) {
+
+  .fotos h1 {
+    top: 45%;
+    left: 40%;
+    font-size: 300%;
+  }
+  .container {
+    flex: 1;
+  }
+  .descripcion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1% 5%;
+    line-height: 200%;
+    height: 100%;
+  }
+
+  .descripcion p {
+    font-size: 135%;
+    line-height: 150%;
+  }
+
+  .descripcion h2 {
+    color: #8DD5F2;
+    font-size: 300%;
+  }
+}

@@ -1,0 +1,144 @@
+.pie {
+    height: 25%;
+    background-color: #023e74;
+    display: flex;
+}
+
+.logopie {
+    display: flex;
+    width: 200%;
+    padding-top: 1.8%;
+    align-content: center;
+    margin-left: 4%;
+}
+
+.ft-social {
+    padding-left: 5%;
+}
+
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+}
+
+.ft-social-list li {
+    /* margin: 1rem;      */
+    margin: 2%;
+    font-size: 1.50rem;
+    width: 50px;
+    text-align: center;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+    align-items: center;
+    /* justify-content: center; */
+    list-style-type: none;
+}
+
+.ft-social-list li a:hover {
+    transform: translateY(-3px) scale(1.05px);
+    /* box-shadow: 0 5px 5px 0px rgba(0,0,0,20); */
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #023e74;
+    border-top: 2px solid white;
+    margin-top: 2%;
+
+}
+
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+    color: white;
+    list-style: none;
+}
+
+.ft-legal-list li a {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+
+    color: white;
+}
+
+/* one before the last child */
+/* .ft-legal-list li:nth-last-child(2) {
+    /* flex: 1; */
+/* same as flex-grow: 1; 
+  } */
+
+@media screen and (min-width: 768px) {
+
+    .logopie {
+        width: 100%;
+        padding-top: 1.8%;
+        margin-left: 0;
+        margin-bottom: 2%;
+        display: flex;
+
+        justify-content: space-around;
+
+    }
+
+    .ft-legal {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .ft-social {
+        padding: 0 1.875rem 1.25rem;
+    }
+
+    .ft-social-list {
+        display: flex;
+
+
+    }
+
+    .ft-social-list li {
+        margin: 1rem;
+        font-size: 1.50rem;
+        width: 50px;
+        text-align: center;
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+
+    }
+
+    .ft-social-list li a:hover {
+        transform: translateY(-3px) scale(1.05px);
+        /* box-shadow: 0 5px 5px 0px rgba(0,0,0,20); */
+    }
+
+    .logopie {
+        width: 100%;
+        padding-top: 1.8%;
+
+        margin-bottom: 2%;
+        display: flex;
+
+        justify-content: space-around;
+
+    }
+
+    .ft-legal {
+        justify-content: space-evenly;
+    }
+    .container {
+        flex: 1;
+        /* same as flex-grow: 1; */
+
+
+    }
+}

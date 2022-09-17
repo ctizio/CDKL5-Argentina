@@ -549,12 +549,7 @@ label {
 
     }
 
-    .container {
-        flex: 1;
-        /* same as flex-grow: 1; */
-
-
-    }
+    
 
 
 }
