@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url(header.css);
+@import url(footer.css);
+
+
+.acerca {
+    /* height: 50vh; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1% 5%;
+    line-height: 200%;
+    align-items: center;
+    height: 100%;
+}
+
+/* FIN  ACERCA DE Y NOTICIAS*/
+/*SOLO ACERCA DE*/
+.acerca h2 {
+    color: #8DD5F2;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.acerca h3 {
+    color: #8DD5F2;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  
+    .acerca {
+      height: 100%;
+      align-items: center;
+    }
+  }
+  
+  /* PARA ESCRITORIO!! lllllllllllllllllllllllllllllllllllllllllllllllllllllllllll */
+  /* @media screen and (min-width: 1024px) {
+  
+  
+  
+    .sociales img {
+      background-color: #bbb;
+      width: 50px;
+      display: block;
+      margin-bottom: 10%;
+    }
+
+  } */
