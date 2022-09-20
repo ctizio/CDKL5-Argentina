@@ -19,16 +19,20 @@
 
 .descripcion,
 .newsletter {
-  height: 20vh;
-  text-align: center;
+  /* height: 20vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin: 1% 5%;
+  text-align: center;
+  height: 100%;
+  line-height: 200%;
 }
 
 .descripcion h2 {
   color: #8DD5F2;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .boton-suscribir {

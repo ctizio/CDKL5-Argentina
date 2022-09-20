@@ -1,3 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 @import url(header.css);
 @import url(footer.css);
+
+
+.donar h2 {
+    color: #8DD5F2;
+    text-align: center;
+    margin-bottom: 5px;
+}
