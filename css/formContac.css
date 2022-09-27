@@ -62,9 +62,26 @@ label {
     background-color: #8DD5F2;
     font-size: 20px;
     margin-left: 25%;
-    color: white;
-    padding-top: 1;
+    /* color: white; */
+    /* padding-top: 1; */
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    padding: 1% 5%;
+    /* margin-bottom: 5%; */
 }
+/* .boton-suscribir {
+    background: #8DD5F2;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    padding: 1% 5%;
+    margin-bottom: 5%;
+  } */
 
 .formulario input:focus {
     outline: 0;
@@ -157,5 +174,5 @@ label {
     label {
         margin: 0 0;
     }
-
 }
+

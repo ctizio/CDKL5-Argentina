@@ -259,3 +259,9 @@ header {
         justify-content: space-evenly;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .main-header{
+        height: 150px;
+    }
+}
