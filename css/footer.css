@@ -10,16 +10,20 @@
     padding-top: 1.8%;
     align-content: center;
     margin-left: 4%;
+    
 }
 
 .ft-social {
     padding-left: 5%;
+
 }
 
 .ft-social-list {
     display: flex;
     justify-content: center;
     padding-top: 1.25rem;
+     padding-bottom: 1.25rem; 
+   
 }
 
 .ft-social-list li {
@@ -75,6 +79,7 @@
   } */
 
 @media screen and (min-width: 768px) {
+   
 
     .logopie {
         width: 100%;
@@ -100,7 +105,8 @@
 
     .ft-social-list {
         display: flex;
-
+        padding-top: 1.25rem;
+        padding-bottom: 0; 
 
     }
 
