@@ -49,6 +49,33 @@
   margin-bottom: 5px;
 }
 
+.carousel .carousel-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  width: 300px;
+  height: 500px;
+}
+.carousel .carousel-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.carousel{
+  min-height: 500px;
+ 
+ 
+}
+
+
 @media screen and (min-width: 768px) {
 
   .fotos {
@@ -68,6 +95,16 @@
     justify-content: flex-start;
     text-align: center;
   }
+  .barra {
+    position: static ;
+    margin-left: 0 ;
+    flex-basis: 70% ;
+    height: 100% ;
+    box-shadow: none ;
+    width: max-content;
+  
+  
+}
 
 }
 
@@ -99,5 +136,11 @@
   .descripcion h2 {
     color: #8DD5F2;
     font-size: 300%;
+  }
+}
+  
+@media screen and (min-width: 1200px) {
+  .main-header{
+      height: 150px;
   }
 }
