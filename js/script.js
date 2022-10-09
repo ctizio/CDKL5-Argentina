@@ -38,3 +38,19 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   }) 
 })
+
+let suscripciones = [];
+
+const getValueInput = () => {
+  suscripciones.push(document.getElementsByClassName("boton-email")[0].value);
+  
+  console.log(suscripciones);
+  alert("Gracias por susbribirse.");
+}
+document.addEventListener('DOMContentLoaded', function(){
+  let formulario = document.getElementById('formul');
+  formulario.addEventListener('submit', function() {
+    formulario.reset();
+  });
+  location.hash = "#formul";
+});
