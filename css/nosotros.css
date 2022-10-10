@@ -49,6 +49,20 @@
   margin-bottom: 5px;
 }
 
+.descripcion-parrafo{
+  padding: 5%;
+}
+
+#fotoX1{
+  width: 50%;
+  padding-top: 5%;
+}
+
+.descripcion-nosotros p{
+  text-align: justify;
+  padding: 5%;
+}
+
 .carousel .carousel-item{
   display: flex;
   flex-direction: column;
@@ -137,6 +151,7 @@
     color: #8DD5F2;
     font-size: 300%;
   }
+
 }
   
 @media screen and (min-width: 1200px) {
