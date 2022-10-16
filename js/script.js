@@ -45,7 +45,7 @@ const getValueInput = () => {
   suscripciones.push(document.getElementsByClassName("boton-email")[0].value);
   
   console.log(suscripciones);
-  alert("Gracias por susbribirse.");
+  
 }
 document.addEventListener('DOMContentLoaded', function(){
   let formulario = document.getElementById('formul');
@@ -123,4 +123,21 @@ for (let persona of familias) {
   //agrego p a .descripcion-parrafo
   descDesc.appendChild(descP);
  main.appendChild(descNos); 
+
+
+ 
 }
+// PARA MOSTRAR FAMILIAS POR CONSOLA
+for(i of familias){
+  console.log(familias[i])};
+
+// PARA GUARDAR Y MOSTRAR FAMILIAS EN EL LOCALSTORAGE
+const guardarFamilias=(clave,valor)=>{
+  localStorage.setItem(clave,valor)
+}
+  for(const familia of familias){
+    guardarFamilias("Lista familias",JSON.stringify(familias));
+   
+    }
+    for(i in familias){
+      console.log(familias[i])};

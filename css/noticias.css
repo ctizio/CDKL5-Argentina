@@ -2,6 +2,17 @@
 @import url(header.css);
 @import url(footer.css);
 
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    right: 25%;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 120%;
+    justify-content: flex-start;
+    text-align: center;
+}
 
 .acerca {
     display: flex;
@@ -47,8 +58,9 @@
 }
 
 .container-1 {
-    display: flex;
-    justify-content: center;
+    
+    position: relative;
+  width: 20px;
 }
 
 .container-1 input#search {
@@ -80,7 +92,14 @@
     text-align: center;
 }
 
-
+.boton-leer {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #8dd5f2;
+    color: #fff;
+    font-size: 1em;
+  }
 .boton-suscribir {
     background: #8DD5F2;
     color: #fff;
@@ -92,8 +111,33 @@
     margin-bottom: 5%;
   }
 
+/* BOTON CONFIRMACION DE VENTANA DE ALERTA PERSONALIZADA */
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #8dd5f2;
+    color: #fff;
+    font-size: 1em;
+  }
 
+  .container-1 {
+   
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    margin-left: 22%;
+    margin-bottom: 13%;
+}
 
+.container-1 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -128,7 +172,15 @@
     }
 }
 
-
+/* BOTON CONFIRMACION DE VENTANA DE ALERTA PERSONALIZADA */
+.swal2-styled.swal2-confirm {
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #8dd5f2;
+  color: #fff;
+  font-size: 1em;
+}
 @media screen and (min-width: 1024px) {
     .noticias {
         display: flex;
@@ -213,6 +265,33 @@
         color: #8DD5F2;
         margin-top: 50%;
 
+    }
+    .input {
+        box-sizing: border-box;
+        color: #191919;
+        padding: 15px 15px 15px 35px;
+        width: 90%;
+      }
+    .input-icon {
+        color: #191919;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .banner h1 {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        right: 30%;
+        color: white;
+        flex-wrap: wrap;
+        font-size: 400%;
+        justify-content: flex-start;
+        text-align: center;
     }
 
 }

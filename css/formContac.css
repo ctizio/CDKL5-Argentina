@@ -3,6 +3,19 @@
 @import url(footer.css);
 
 /* -----Formulario----------- */
+
+
+.banner h1 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    right: 30%;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 120%;
+    justify-content: flex-start;
+    text-align: center;
+}
 legend {
     font-size: 40px;
     color: #8DD5F2;
@@ -106,6 +119,7 @@ label {
     .contact_form {
         display: grid;
         align-items: center;
+        margin-left: 18%;
         grid-template-columns: 65% 35%;
         width: 100%;
     }
@@ -173,6 +187,17 @@ label {
 
     label {
         margin: 0 0;
+    }
+    .banner h1 {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        right: 30%;
+        color: white;
+        flex-wrap: wrap;
+        font-size: 400%;
+        justify-content: flex-start;
+        text-align: center;
     }
 }
 

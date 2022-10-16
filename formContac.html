@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 
@@ -23,12 +23,12 @@
         <nav id="nav" class="barra">
             <div class="botones">
                 <a href="index.html" class="C1">Home</a>
-                <a href="acerca.html" class="C1">CDKL5</a>
+                <a href="acerca.html" class="C1">Acerca de CDKL5</a>
                 <a href="nosotros.html" class="C1">Nosotros</a>
                 <a href="noticias.html" class="C1">Noticias</a>
                 <a href="formContac.html" class="C1">Contacto</a>
-                <a href="donar.html" class="C1">Donar</a>
-              </div>
+                <a href="donar.html" class="C1">Quiero Donar</a>
+            </div>
         </nav>
         
         <button id="button-menu" class="button-menu">
@@ -41,11 +41,12 @@
     <main>
 
         <div class="banner">
-            <img src="img/contacto.png" alt="banner" width="100%">
+            <img src="img/contacto3.png" alt="banner" width="100%">
+            <h1 class="contacto">CONTACTO</h1>
         </div>
 
         <div class="contact_form">
-            <form class="ppal">
+            <form class="ppal"  id="formulario">
                 <!-- <fieldset> -->
                 <legend>ESCRIBINOS: </legend>
                 <div class="text-escribinos">
@@ -59,35 +60,43 @@
                         <label for="nombre" class="in_nombre">
                             Nombre: <span class="obligatorio">*</span>
                         </label>
-                        <input type="text" name="nombre" required="obligatorio" placeholder="Nombres">
+                        <input name="userName" placeholder="* Nombres" id="userName" type="text"  required="obligatorio" >
+                        <p class="text-danger mb-2 d-none" id="alertName"></p>
                     </div>
                     <div class="campos" id="apellido">
                         <label for="apellido" class="in_apellido" required="obligatorio">
                             Apellido: <span class="obligatorio">*</span>
                         </label>
-                        <input type="text" name="apellido" required="obligatorio" placeholder="Apellidos">
+                        <input name="surName" placeholder="* Apellido" id="surName" type="text"  required="obligatorio" >
+                        <p class="text-danger mb-2 d-none" id="alertsurName"></p>
                     </div>
+                    
                     <div class="campos" id="mail">
                         <label for="email" class="in_email" required="obligatorio">
                             E-Mail: <span class="obligatorio">*</span>
                         </label>
-                        <input type="email" name="email" required="obligatorio" placeholder="tuCorreo@gmail.com">
+                        <input name="userEmail" placeholder="* Ingresa un e-mail" id="userEmail" type="email"  class="boton-email" required="obligatorio" />
+                        <p class="text-danger mb-2 d-none" id="alertEmail"></p>
                     </div>
                     <div class="campos" id="mensaje">
                         <label for="mensaje" class="in_mensaje" required="obligatorio">
                             Tu mensaje: <span class="obligatorio">*</span>
                         </label>
-                        <textarea name="mensaje" class="text_message" required="obligatorio"
+                        <textarea id="mensaje" name="mensaje" class="text_message" required="obligatorio"
                             placeholder="Contanos tu historia:"></textarea>
                     </div>
-                    <input type="submit" value="ENVIAR" class="boton1">
+                    <button class="boton1" type="submit">ENVIAR</button>
+                   
                     <p class="aviso">
                         <span class="obligatorio"> * </span>Los campos son obligatorios.
                     </p>
                 </form>
-
+            </form>
+                <div class="alert alert-success mt-2 d-none"
+                id="alertSuccess">
                 <!-- </fieldset> -->
             </form>
+            
             <div class="sisos">
                 <p>   Si sos investigador, escribinos a</p>
                 <a href="mailto:investigadores@cdkl5.com.ar">investigadores@cdkl5.com.ar</a> <br>
@@ -128,8 +137,10 @@
             </div>     
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/formContact.js"></script>
+ <script src="js/script.js"></script>
   <script src="https://kit.fontawesome.com/773f6edefa.js" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 

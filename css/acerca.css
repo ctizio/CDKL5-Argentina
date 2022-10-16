@@ -34,16 +34,37 @@
     }
   }
   
-  /* PARA ESCRITORIO!! lllllllllllllllllllllllllllllllllllllllllllllllllllllllllll */
-  /* @media screen and (min-width: 1024px) {
+  .banner h1 {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    right: 30%;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 150%;
+    justify-content: flex-start;
+    text-align: center;
+}
+   /* PARA ESCRITORIO!! lllllllllllllllllllllllllllllllllllllllllllllllllllllllllll */ 
+   @media screen and (min-width: 1024px) {
   
-  
-  
-    .sociales img {
+    .banner h1 {
+      position: absolute;
+      top: 45%;
+      left: 30%;
+      right: 30%;
+      color: white;
+      flex-wrap: wrap;
+      font-size: 320%;
+      justify-content: flex-start;
+      text-align: center;
+    }
+  }
+    /* .sociales img {
       background-color: #bbb;
       width: 50px;
       display: block;
       margin-bottom: 10%;
-    }
+    } */
 
-  } */
+  

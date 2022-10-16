@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CDKL5 Argentina</title>
   <!-- <link rel="stylesheet" href="css/style.css"> -->
+  
   <link rel="stylesheet" href="css/noticias.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 
@@ -24,11 +25,11 @@
     <nav id="nav" class="barra">
       <div class="botones">
         <a href="index.html" class="C1">Home</a>
-        <a href="acerca.html" class="C1">CDKL5</a>
+        <a href="acerca.html" class="C1">Acerca de CDKL5</a>
         <a href="nosotros.html" class="C1">Nosotros</a>
         <a href="noticias.html" class="C1">Noticias</a>
         <a href="formContac.html" class="C1">Contacto</a>
-        <a href="donar.html" class="C1">Donar</a>
+        <a href="donar.html" class="C1">Quiero Donar</a>
       </div>
 
     </nav>
@@ -58,8 +59,8 @@
           <div class="card-body">
 
             <h5 class="card-title">Conferencia Internacional de la Familia CDKL5</h5>
-            <p class="card-text">Haga clic aquí para obtener más detalles en el sitio web de CDKL5 Canadá</p>
-            <a href="https://cdkl5alliance.org/cdkl5-international-family-conference-2/" class="btn btn-primary">Leer
+            <p class="card-text">Para obtener más detalles en el sitio web de CDKL5 Canadá:</p>
+            <a href="https://cdkl5alliance.org/cdkl5-international-family-conference-2/" >Leer
               más</a>
 
           </div>
@@ -70,8 +71,9 @@
           <div class="card-body">
 
             <h5 class="card-title">Congreso CDKL5 Español</h5>
-            <p class="card-text"> Conferencia CDKL5 en español, organizada por Asociación de Afectados CDKL5.</p>
-            <a href="https://cdkl5alliance.org/spanish-cdkl5-conference/" class="btn btn-primary">Leer más</a>
+            <br>
+            <p class="card-text"> Conferencia CDKL5 en español, organizada por Asociación de Afectados CDKL5:</p>
+            <a href="https://cdkl5alliance.org/spanish-cdkl5-conference/" >Leer más</a>
 
           </div>
         </div>
@@ -81,8 +83,8 @@
           <div class="card-body">
 
             <h5 class="card-title">CDKL5 Asia del Sur Conocer y saludar</h5>
-            <p class="card-text">Conferencia sobre CDKL5.</p>
-            <a href="https://cdkl5alliance.org/spanish-cdkl5-conference/" class="btn btn-primary">Leer más</a>
+            <p class="card-text">Conferencia sobre CDKL5:</p>
+            <a href="https://cdkl5alliance.org/spanish-cdkl5-conference/" >Leer más</a>
 
           </div>
         </div>
@@ -92,40 +94,57 @@
 
       <div class="box">
         <div class="container-1">
-          <span class="icon"><i class="fa fa-search"></i></span>
-          <input type="search" id="search" placeholder="Buscar..." />
+          <input type="search" class="input" placeholder="Buscar">
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+  </svg>
+                  
+        
+      
         </div>
 
+       
         <div class="container-2">
+          <form class="ppal" id="formulario">
           <h4>Suscribite a nuestro Newsletter</h4>
           <br>
           <br>
-          <form class="ppal">
-          <form action="#" method="POST" enctype="text/plain">
+          
+          <form action="#" method="POST" enctype="text/plain" >
             <div class="campos" id="nombre">
-              <input type="text" name="nombre" required="obligatorio" placeholder="Nombres">
+              <input name="userName" placeholder="* Nombres" id="userName" type="text"  required="obligatorio" >
+              <p class="text-danger mb-2 d-none" id="alertName"></p>
             </div>
+           
             <br>
             <div class="campos" id="apellido">
-              <input type="text" name="apellido" required="obligatorio" placeholder="Apellidos">
+              <input name="surName" placeholder="* Apellido" id="surName" type="text"  required="obligatorio" >
+              <p class="text-danger mb-2 d-none" id="alertsurName"></p>
             </div>
             <br>
             <div class="campos" id="mail">
-              <input type="email" name="email" required="obligatorio" placeholder="Email">
-            </div>
+              <input name="userEmail" placeholder="* Ingresa un e-mail" id="userEmail" type="email"  class="boton-email" required="obligatorio" />
+             <p class="text-danger mb-2 d-none" id="alertEmail"></p>
+          </div>
 
             <br>
-            <input type="submit" class="boton-suscribir" value="SUSCRIBITE" />
+            <button class="boton-suscribir" type="submit">Suscribite</button>
             <br>
-
+            <p class="aviso">
+              <span class="obligatorio"> * </span>Los campos son obligatorios.
+            </p>
           </form>
-        </form>
 
+        </form> 
+        <div class="alert alert-success mt-2 d-none"
+         id="alertSuccess">
+        </div>
         </div>
 
       </div>
-    </div>
-    <!-- </div>  -->
+  
+    
 
   </main>
 
@@ -169,8 +188,11 @@
 
     </div>
   </footer>
-  <script src="https://kit.fontawesome.com/773f6edefa.js" crossorigin="anonymous"></script>
+ 
   <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/773f6edefa.js" crossorigin="anonymous"></script>
+  <script src="js/suscriptores.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 
