@@ -1,0 +1,22 @@
+
+
+body{
+    background-image: url("/img/transferencia2.jpg"); 
+    background-size:contain;
+
+
+}
+h1,h2{
+   color:white;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.pie {
+   height: 25%;
+   background-color: #023e74;
+   display: flex;
+   margin-top: 20%;
+}
+.contenedor{
+   padding-top: 3%;
+}

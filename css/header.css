@@ -61,6 +61,12 @@ header {
     color: #ababab;
     text-decoration: none;
 }
+.C2 {
+    margin-left: 35px;
+    background-color: #2DCCFD;
+    text-decoration: none;
+    color:white;
+}
 
 .button-menu {
     z-index: 200;

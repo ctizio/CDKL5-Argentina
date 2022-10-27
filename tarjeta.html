@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/tarjeta.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<title>Tarjeta de Crédito</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header class="main-header">
+		<div class="logo"><img src="img/logo.png" alt="logo" width="50%"></div>
+		<nav id="nav" class="barra">
+	
+		  <div class="botones">
+			<a href="index.html" class="C1">Inicio</a>
+			<a href="acerca.html" class="C1">Acerca de CDKL5</a>
+			<a href="nosotros.html" class="C1">Nosotros</a>
+			<a href="noticias.html" class="C1">Noticias</a>
+			<a href="formContac.html" class="C1">Contacto</a>
+			<a href="donar.html" class="C2">Quiero Donar</a>
+		  </div>
+	
+		</nav>
+		<button id="button-menu" class="button-menu">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</button>
+	  </header>
+
+
+
+	<div class="contenedor">
+     
+		<!-- Tarjeta -->
+		<section class="tarjeta" id="tarjeta">
+
+			
+			<div class="delantera">				
+				<div class="tooltip">
+					<span class="tooltiptext">Presione en el circulo para ingresar sus datos</span>
+				
+				<div class="logo-marca" id="logo-marca">
+					<!-- <img src="img/logos/visa.png" alt=""> -->
+				</div>
+				<img src="img/chip-tarjeta.png" class="chip" alt="">
+			
+				<div class="datos">
+					<div class="grupo" id="numero">
+						<p class="label">Número Tarjeta</p>
+						<p class="numero">#### #### #### ####</p>
+					</div>
+					<div class="flexbox">
+						<div class="grupo" id="nombre">
+							<p class="label">Nombre Tarjeta</p>
+							<p class="nombre">Francisco Gonzalez</p>
+						</div>
+
+						<div class="grupo" id="expiracion">
+							<p class="label">Expiracion</p>
+							<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+			
+		
+			<div class="trasera">
+				<div class="barra-magnetica"></div>
+				<div class="datos">
+					<div class="grupo" id="firma">
+						<p class="label">Firma</p>
+						<div class="firma"><p></p></div>
+					</div>
+					<div class="grupo" id="ccv">
+						<p class="label">CCV</p>
+						<p class="ccv"></p>
+					</div>
+				</div>
+				<p class="leyenda">Guarda bien tus Tarjetas y no las prestes. Tampoco la expongas a fuentes magnéticas o de calor ya que pueden dañarla.
+					Una vez que finalices tu operación en el Cajero, recordá retirarla del mismo.
+					
+					</p>
+				<a href="#" class="link-banco">www.tubanco.com</a>
+			</div>
+		</section>
+
+		<!-- Contenedor Boton Abrir Formulario -->
+		
+		<div class="contenedor-btn">
+			<button class="btn-abrir-formulario" id="btn-abrir-formulario">
+				<i class="fas fa-plus"></i>
+			</button>
+		</div>
+
+		<!-- Formulario -->
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero">Número Tarjeta</label>
+				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+			</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombre</label>
+				<input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					<label for="selectMes">Expiracion</label>
+					<div class="flexbox">
+						<div class="grupo-select">
+							<select name="mes" id="selectMes">
+								<option disabled selected>Mes</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="grupo-select">
+							<select name="year" id="selectYear">
+								<option disabled selected>Año</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="grupo ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV" maxlength="3">
+				</div>
+			</div>
+			<button type="submit" class="btn-enviar" id="btn-enviar">Donar</button>
+			
+		   
+		</div>
+		  
+	  
+	  
+		</form>
+		<div class="alert alert-success mt-2 d-none"
+		id="alertSuccess"> </div>
+		<footer>
+
+			<div class="pie">
+				<div class="container">
+					<div class="logopie"><img src="img/logo_pie.png" alt="logo" width="20%">
+						<section class="ft-social">
+							<ul class="ft-social-list">
+								<li><a href="https://www.facebook.com/CDKL5-Argentina-100111112781967"><i
+											class="fab fa-facebook" style="color: white"></i></a></li>
+								<li><a href="https://twitter.com/CDKL5Alliance"><i class="fab fa-twitter"
+											style="color: white"></i></a></li>
+								<li><a href="https://www.instagram.com/cdkl5.argentina/"><i class="fab fa-instagram"
+											style="color: white"></i></a></li>
+								<link rel="icon" href="favicon.png">
+							</ul>
+						</section>
+					</div>
+	
+	
+					<section class="ft-legal">
+						<ul class="ft-legal-list">
+	
+							<li><a href="#">Politica de Privacidad</a></li>
+							<li><a href="#">Condiciones de Uso</a></li>
+							<li>&copy; 2022 Copyright CDKL5 Argentina</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</footer>
+
+
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/tarjeta.js"></script>
+</body>
+</html>
